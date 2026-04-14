@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" parallel="methods" thread-count="5">
+
+<listeners>
+		<listener class-name="vertex.CD.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="vertex.CD.util.AnnotationTransformer" />
+	</listeners>
+
+  <test name="Test">
+    <classes>
+     <class name="vertex.CD.testcases.LoginPageTest"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

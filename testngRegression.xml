@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="vertex.CD.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+  <test thread-count="5" name="TestRegression">
+    <classes>
+      <class name="vertex.CD.testcases.NewCentralBillingClaimCreationTest"/>
+      <class name="vertex.CD.testcases.NewMCBClaimCreationTest"/>
+      <class name="vertex.CD.testcases.NewReBrandClaimCreationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
