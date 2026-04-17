@@ -843,3 +843,4 @@ Session ID: f717fc544b75ab3063dcdb29a580ab40
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
 	at java.lang.Thread.run(Thread.java:840) [?:?]
 10:31:20.893 [main]  INFO  vertex.CD.util.TestListener - ===== Test Suite Finished =====
+15:58:06.399 [main]  INFO  vertex.CD.util.TestListener - ===== Test Suite Started: Default test =====
