@@ -1,76 +1,45 @@
-
 package vertex.CD.ExtentReportListener;
 
-import java.io.File;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
-import org.testng.IReporter;
-import org.testng.IResultMap;
-import org.testng.ISuite;
-import org.testng.ISuiteResult;
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.xml.XmlSuite;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.*;
 
-public class ExtentReporterNG implements IReporter {
-	private ExtentReports extent;
+public class ExtentReporterNG implements ITestListener {
 
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator
-				+ "ClaimDriverTest.html", true);
+    private static ExtentReports extent = ExtentManager.getInstance();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
-		for (ISuite suite : suites) {
-			Map<String, ISuiteResult> result = suite.getResults();
+    @Override
+    public void onTestStart(ITestResult result) {
+        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
+        test.set(extentTest);
+    }
 
-			for (ISuiteResult r : result.values()) {
-				ITestContext context = r.getTestContext();
+    @Override
+    public void onTestSuccess(ITestResult result) {
+        test.get().pass("Test Passed");
+    }
 
-				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
-				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
-				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
-			}
-		}
+    @Override
+    public void onTestFailure(ITestResult result) {
 
-		extent.flush();
-		extent.close();
-	}
+        test.get().fail(result.getThrowable());
 
-	private void buildTestNodes(IResultMap tests, LogStatus status) {
-		ExtentTest test;
+        // Screenshot (optional)
+       // String path = ScreenshotUtil.captureScreenshot(result.getMethod().getMethodName());
 
-		if (tests.size() > 0) {
-			for (ITestResult result : tests.getAllResults()) {
-				test = extent.startTest(result.getMethod().getMethodName());
+        //test.get().addScreenCaptureFromPath(path);
+    }
 
-				test.setStartedTime(getTime(result.getStartMillis()));
-				test.setEndedTime(getTime(result.getEndMillis()));
+    @Override
+    public void onTestSkipped(ITestResult result) {
+        test.get().skip("Test Skipped");
+    }
 
-				for (String group : result.getMethod().getGroups())
-					test.assignCategory(group);
-
-				if (result.getThrowable() != null) {
-					test.log(status, result.getThrowable());
-				} else {
-					test.log(status, "Test " + status.toString().toLowerCase()
-							+ "ed");
-				}
-
-				extent.endTest(test);
-			}
-		}
-	}
-
-	private Date getTime(long millis) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTimeInMillis(millis);
-		return calendar.getTime();
-	}
+    @Override
+    public void onFinish(ITestContext context) {
+        extent.flush();
+    }
 }

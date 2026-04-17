@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 10:30:26 IST 2026</td>
+<td>Started on:</td><td>Fri Apr 17 20:42:37 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54468 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45736 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven()'><b>loginTestbyDataDriven</b><br>Test class: vertex.CD.testcases.LoginPageTest<br>Parameters: 3, autotest1@vertex.com</td>
+<td title='vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven()'><b>loginTestbyDataDriven</b><br>Test class: vertex.CD.testcases.LoginPageTest<br>Parameters: 1, autotest@vertex.com</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [08362841215cb30db9e325c1f92a3e97, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52631}, goog:processID: 10680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52631/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08362841215cb30db9e325c1f92a3e97
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [4fb08ba1a41f954dc90b22d8c624cb16, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57598}, goog:processID: 13768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57598/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fb08ba1a41f954dc90b22d8c624cb16
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -104,36 +102,32 @@ Session ID: 08362841215cb30db9e325c1f92a3e97
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1322725748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1322725748'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1617377732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617377732'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [08362841215cb30db9e325c1f92a3e97, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52631}, goog:processID: 10680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52631/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08362841215cb30db9e325c1f92a3e97
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [4fb08ba1a41f954dc90b22d8c624cb16, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57598}, goog:processID: 13768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57598/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fb08ba1a41f954dc90b22d8c624cb16
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -147,40 +141,36 @@ Session ID: 08362841215cb30db9e325c1f92a3e97
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>10</td>
-<td>vertex.CD.testcases.LoginPageTest@b2c9a9c</td></tr>
+<td>vertex.CD.testcases.LoginPageTest@1c1bbc4e</td></tr>
 <tr>
 <td title='vertex.CD.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: vertex.CD.testcases.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [afb74601377f66d11f9eec4c7a6bbf74, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63272}, goog:processID: 10532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63272/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: afb74601377f66d11f9eec4c7a6bbf74
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [afba090409532da4f29c19c6730e81b3, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53021}, goog:processID: 10444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53021/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afba090409532da4f29c19c6730e81b3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -194,13 +184,11 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTest(LoginPageTest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -209,7 +197,7 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -225,21 +213,19 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1689169705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1689169705'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace61041877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61041877'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [afb74601377f66d11f9eec4c7a6bbf74, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63272}, goog:processID: 10532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63272/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: afb74601377f66d11f9eec4c7a6bbf74
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [afba090409532da4f29c19c6730e81b3, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53021}, goog:processID: 10444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53021/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afba090409532da4f29c19c6730e81b3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -253,13 +239,11 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTest(LoginPageTest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -268,7 +252,7 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -286,23 +270,21 @@ Session ID: afb74601377f66d11f9eec4c7a6bbf74
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>10</td>
-<td>vertex.CD.testcases.LoginPageTest@b2c9a9c</td></tr>
+<td>vertex.CD.testcases.LoginPageTest@1c1bbc4e</td></tr>
 <tr>
 <td title='vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven()'><b>loginTestbyDataDriven</b><br>Test class: vertex.CD.testcases.LoginPageTest<br>Parameters: 2, jayantt@vertexcs.com</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f717fc544b75ab3063dcdb29a580ab40, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52630}, goog:processID: 21800, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52630/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f717fc544b75ab3063dcdb29a580ab40
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [fe03cc89bc6c68cb1d991262f04e65e3, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53758}, goog:processID: 21564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53758/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe03cc89bc6c68cb1d991262f04e65e3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -316,36 +298,32 @@ Session ID: f717fc544b75ab3063dcdb29a580ab40
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1995068989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1995068989'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace309894724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace309894724'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f717fc544b75ab3063dcdb29a580ab40, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52630}, goog:processID: 21800, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52630/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f717fc544b75ab3063dcdb29a580ab40
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [fe03cc89bc6c68cb1d991262f04e65e3, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53758}, goog:processID: 21564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53758/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe03cc89bc6c68cb1d991262f04e65e3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -359,40 +337,36 @@ Session ID: f717fc544b75ab3063dcdb29a580ab40
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>10</td>
-<td>vertex.CD.testcases.LoginPageTest@b2c9a9c</td></tr>
+<td>vertex.CD.testcases.LoginPageTest@1c1bbc4e</td></tr>
 <tr>
-<td title='vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven()'><b>loginTestbyDataDriven</b><br>Test class: vertex.CD.testcases.LoginPageTest<br>Parameters: 1, autotest@vertex.com</td>
+<td title='vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven()'><b>loginTestbyDataDriven</b><br>Test class: vertex.CD.testcases.LoginPageTest<br>Parameters: 3, autotest1@vertex.com</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0ed08a1e27f2df50024d05211f722145, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52632}, goog:processID: 7468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52632/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ed08a1e27f2df50024d05211f722145
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [be1eb84a1b2df8a56dfae9d939b2cf94, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57599}, goog:processID: 22516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57599/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be1eb84a1b2df8a56dfae9d939b2cf94
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -406,36 +380,32 @@ Session ID: 0ed08a1e27f2df50024d05211f722145
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1959724470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1959724470'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
-  (Session info: chrome=146.0.7680.180)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace801429912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace801429912'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Email&quot;}
+  (Session info: chrome=147.0.7727.57)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0ed08a1e27f2df50024d05211f722145, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52632}, goog:processID: 7468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52632/devtoo..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ed08a1e27f2df50024d05211f722145
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [be1eb84a1b2df8a56dfae9d939b2cf94, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\JAYANT~1.TEJ\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57599}, goog:processID: 22516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57599/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be1eb84a1b2df8a56dfae9d939b2cf94
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -449,24 +419,22 @@ Session ID: 0ed08a1e27f2df50024d05211f722145
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at vertex.CD.pages.LoginPage.login(LoginPage.java:64)
 	at vertex.CD.testcases.LoginPageTest.loginTestbyDataDriven(LoginPageTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
 	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>10</td>
-<td>vertex.CD.testcases.LoginPageTest@b2c9a9c</td></tr>
+<td>vertex.CD.testcases.LoginPageTest@1c1bbc4e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -480,7 +448,7 @@ Session ID: 0ed08a1e27f2df50024d05211f722145
 <td title='vertex.CD.testcases.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: vertex.CD.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>vertex.CD.testcases.LoginPageTest@b2c9a9c</td></tr>
+<td>vertex.CD.testcases.LoginPageTest@1c1bbc4e</td></tr>
 </table><p>
 </body>
 </html>
