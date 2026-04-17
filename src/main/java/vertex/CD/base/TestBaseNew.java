@@ -21,7 +21,8 @@ public class TestBaseNew {
 			prop = new Properties();
 			System.out.println("Loading properties file");
 
-			InputStream ip = getClass().getClassLoader().getResourceAsStream("vertex/CD/config/config.properties");
+			//InputStream ip = getClass().getClassLoader().getResourceAsStream("vertex/CD/config/config.properties");
+			InputStream ip = getClass().getClassLoader().getResourceAsStream("config.properties");
 
 			if (ip == null) {
 				System.out.println("Sorry, unable to find config.properties");
