@@ -1,10 +1,14 @@
 package vertex.CD.ExtentReportListener;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.*;
+
+import vertex.CD.util.TestUtil;
 
 public class ExtentReporterNG implements ITestListener {
 
@@ -31,6 +35,13 @@ public class ExtentReporterNG implements ITestListener {
        // String path = ScreenshotUtil.captureScreenshot(result.getMethod().getMethodName());
 
         //test.get().addScreenCaptureFromPath(path);
+        try {
+			String path = TestUtil.captureScreen(result.getMethod().getMethodName());
+			test.get().addScreenCaptureFromPath(path);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
     @Override

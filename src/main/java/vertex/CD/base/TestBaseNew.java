@@ -57,7 +57,8 @@ public class TestBaseNew {
 
 		// DriverManager.setDriver(DriverFactory.initDriver(browserName));
 		System.out.println("Loaded properties file 2");
-		System.out.println("Driver initialized for thread: " + Thread.currentThread().getId());
+		//System.out.println("Driver initialized for thread: " + Thread.currentThread().getId());
+		System.out.println("Driver initialized for thread: " + Thread.currentThread().threadId());
 
 		DriverManager.getDriver().manage().deleteAllCookies();
 
@@ -71,7 +72,7 @@ public class TestBaseNew {
 	@AfterMethod
 	public void tearDown() {
 
-		System.out.println("Closing driver for thread: " + Thread.currentThread().getId());
+		System.out.println("Closing driver for thread: " + Thread.currentThread().threadId());
 
 		DriverManager.getDriver().quit();
 		DriverManager.unload();

@@ -28,7 +28,7 @@ public class TestUtil extends TestBaseNew {
 	//public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	
-	public static void captureScreen(String tname) throws IOException
+	public static String captureScreen(String tname) throws IOException
 	{
 		WebDriver driver = DriverManager.getDriver();
 		TakesScreenshot ts = ((TakesScreenshot) driver);
@@ -42,6 +42,7 @@ public class TestUtil extends TestBaseNew {
 		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname+"-" + formattedDate +"-" + System.currentTimeMillis() +".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot captured");
+		return formattedDate;
 	}
 	
 	public static String[] getMonthYear(String monthYearVal) {
