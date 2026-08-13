@@ -35,6 +35,7 @@ public class ExtentReporterNG implements ITestListener {
        // String path = ScreenshotUtil.captureScreenshot(result.getMethod().getMethodName());
 
         //test.get().addScreenCaptureFromPath(path);
+        System.out.println("from ExtentReporterNG");
         try {
 			String path = TestUtil.captureScreen(result.getMethod().getMethodName());
 			test.get().addScreenCaptureFromPath(path);
